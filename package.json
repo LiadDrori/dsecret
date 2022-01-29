@@ -1,0 +1,26 @@
+{
+  "name": "dsecret",
+  "version": "1.0.0",
+  "description": "This package is a cli utility that decode kubernetes secrets",
+  "main": "build/main.js",
+  "scripts": {
+    "serve": "ts-node src/main.ts",
+    "build": "tsc",
+    "prepublish": "npm run build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "dsecret": "build/main.js",
+    "ds": "build/main.js"
+  },
+  "author": "Liad Drori",
+  "license": "MIT",
+  "dependencies": {
+    "@types/inquirer": "^8.2.0",
+    "@types/node": "^17.0.13",
+    "inquirer": "^8.2.0",
+    "inquirer-search-list": "^1.2.6",
+    "ts-node": "^10.4.0",
+    "typescript": "^4.5.5"
+  }
+}
